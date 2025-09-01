@@ -59,46 +59,30 @@
         eins {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
+            timeout-ms = <75>;
         };
 
         zwei {
             bindings = <&kp TAB>;
             key-positions = <22 23>;
+            timeout-ms = <75>;
         };
 
         drei {
             bindings = <&kp BACKSPACE>;
             key-positions = <7 8>;
+            timeout-ms = <75>;
         };
 
         vier {
             bindings = <&kp ENTER>;
             key-positions = <28 29>;
+            timeout-ms = <75>;
         };
 
         fuenf {
             bindings = <&mo 5>;
             key-positions = <34 35>;
-        };
-
-        OE {
-            bindings = <&kp SEMI>;
-            key-positions = <32 19>;
-        };
-
-        AE {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <32 10>;
-        };
-
-        UE {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <32 7>;
-        };
-
-        ss {
-            bindings = <&kp MINUS>;
-            key-positions = <32 12>;
         };
     };
 
@@ -108,10 +92,10 @@
         Base {
             label = "Base";
             bindings = <
-              &kp Q  &kp W  &kp F         &kp P  &kp B        &kp J      &kp L  &kp U      &kp Z    &kp A
-              &kp A  &kp R  &kp S         &kp T  &kp G        &kp M      &kp N  &kp E      &kp I    &kp O
-&kp LEFT_GUI  &kp Y  &kp X  &kp C         &kp D  &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &kp SLASH  &kp LS(NUMBER_1)
-                            &kp LEFT_ALT  &mo 3  &kp SPACE    &kp LSHFT  &mo 1  &kp RCTRL
+              &kp Q    &kp W  &kp F         &kp P  &kp B        &kp J      &kp L  &kp U      &kp Z    &kp A
+              &lt 4 A  &kp R  &kp S         &kp T  &kp G        &kp M      &kp N  &kp E      &kp I    &lt 2 O
+&kp LEFT_GUI  &kp Y    &kp X  &kp C         &kp D  &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &kp SLASH  &kp LS(NUMBER_1)
+                              &kp LEFT_ALT  &mo 3  &kp SPACE    &kp LSHFT  &mo 1  &kp RCTRL
             >;
         };
 
@@ -120,16 +104,16 @@
        &kp LESS_THAN     &kp NUMBER_7  &kp NUMBER_8          &kp N9        &kp RIGHT_BRACKET       &none  &none      &none      &none     &none
        &kp GREATER_THAN  &kp NUMBER_4  &kp NUMBER_5          &kp NUMBER_6  &kp NON_US_BACKSLASH    &none  &kp RSHFT  &kp RCTRL  &kp RALT  &mo 2
 &none  &kp TILDE         &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3  &kp MINUS               &none  &none      &none      &none     &none  &kp QUESTION
-                                       &kp NON_US_BACKSLASH  &kp NUMBER_0  &kp SPACE               &none  &none      &none
+                                       &kp NON_US_BACKSLASH  &kp NUMBER_0  &kp SPACE               &none  &trans     &none
             >;
         };
 
         layer_2 {
             bindings = <
-       &kp F12  &kp F7  &kp F8  &kp F9  &kp RIGHT_BRACKET       &none  &none      &none      &none     &none
-       &kp F11  &kp F4  &kp F5  &kp F6  &kp NON_US_BACKSLASH    &none  &kp RSHFT  &kp RCTRL  &kp RALT  &none
-&none  &kp F10  &kp F1  &kp F2  &kp F3  &kp MINUS               &none  &none      &none      &none     &none  &none
-                        &none   &none   &none                   &none  &none      &none
+           &kp F12  &kp F7  &kp F8         &kp F9   &kp RIGHT_BRACKET       &none  &none      &none      &none     &none
+           &kp F11  &kp F4  &kp F5         &kp F6   &kp NON_US_BACKSLASH    &none  &kp RSHFT  &kp RCTRL  &kp RALT  &none
+&kp MINUS  &kp F10  &kp F1  &kp F2         &kp F3   &kp MINUS               &none  &none      &none      &none     &none  &none
+                            &kp SEMICOLON  &kp SQT  &kp LEFT_BRACKET        &none  &none      &none
             >;
         };
 
