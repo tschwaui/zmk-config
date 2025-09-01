@@ -55,27 +55,27 @@
     combos {
         compatible = "zmk,combos";
 
-        ESC-COM {
+        eins {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
         };
 
-        TAB-COM {
+        zwei {
             bindings = <&kp TAB>;
             key-positions = <22 23>;
         };
 
-        BACKSP-COM {
+        drei {
             bindings = <&kp BACKSPACE>;
             key-positions = <7 8>;
         };
 
-        ENTER-COM {
+        vier {
             bindings = <&kp ENTER>;
             key-positions = <28 29>;
         };
 
-        layer5 {
+        fuenf {
             bindings = <&mo 5>;
             key-positions = <34 35>;
         };
