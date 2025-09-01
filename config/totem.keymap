@@ -92,7 +92,7 @@
         Base {
             label = "Base";
             bindings = <
-              &kp Q    &kp W  &kp F         &kp P  &kp B        &kp J      &kp L  &kp U      &kp Z    &kp A
+              &kp Q    &kp W  &kp F         &kp P  &kp B        &kp J      &kp L  &kp U      &kp Z    &kp AT
               &lt 4 A  &kp R  &kp S         &kp T  &kp G        &kp M      &kp N  &kp E      &kp I    &lt 2 O
 &kp LEFT_GUI  &kp Y    &kp X  &kp C         &kp D  &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &kp SLASH  &kp LS(NUMBER_1)
                               &kp LEFT_ALT  &mo 3  &kp SPACE    &kp LSHFT  &mo 1  &kp RCTRL
