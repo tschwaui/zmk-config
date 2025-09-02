@@ -72,6 +72,27 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT_SHIFT>, <&mo 7>;
         };
+
+        tdoe: tdoe {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDOE";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&kp SEMICOLON>;
+        };
+
+        tdue: tdue {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDUE";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp LEFT_BRACKET>;
+        };
+
+        tdae: tdae {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDAE";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&kp SQT>;
+        };
     };
 
     combos {
@@ -126,10 +147,10 @@
         Base {
             label = "Base";
             bindings = <
-              &kp Q  &kp W  &kp F         &kp P  &kp B        &kp J  &kp L  &kp U      &kp Z    &kp AT
-              &kp A  &kp R  &kp S         &kp T  &kp G        &kp M  &kp N  &kp E      &kp I    &kp O
-&kp LEFT_GUI  &kp Y  &kp X  &kp C         &kp D  &kp V        &kp K  &kp H  &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSPACE
-                            &kp LEFT_ALT  &td1   &kp SPACE    &td2   &td0   &kp RCTRL
+              &kp Q  &kp W  &kp F         &kp P  &kp B        &kp J            &kp L  &tdue      &kp Z    &kp AT
+              &tdae  &kp R  &kp S         &kp T  &kp G        &kp M            &kp N  &kp E      &kp I    &tdoe
+&kp LEFT_GUI  &kp Y  &kp X  &kp C         &kp D  &kp V        &kp K            &kp H  &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSPACE
+                            &kp LEFT_ALT  &td1   &kp SPACE    &kp RIGHT_SHIFT  &td0   &kp RCTRL
             >;
         };
 
