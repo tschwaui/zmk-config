@@ -59,40 +59,37 @@
         eins {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
-            timeout-ms = <75>;
+            timeout-ms = <100>;
         };
 
         zwei {
             bindings = <&kp TAB>;
             key-positions = <22 23>;
-            timeout-ms = <75>;
+            timeout-ms = <100>;
         };
 
         drei {
             bindings = <&kp BACKSPACE>;
             key-positions = <7 8>;
-            timeout-ms = <75>;
+            timeout-ms = <100>;
         };
 
         vier {
             bindings = <&kp ENTER>;
             key-positions = <28 29>;
-            timeout-ms = <75>;
+            timeout-ms = <100>;
         };
 
         fuenf {
             bindings = <&mo 5>;
             key-positions = <34 35>;
+            timeout-ms = <100>;
         };
 
-        layer4 {
-            bindings = <&tog 4>;
-            key-positions = <11 12 13>;
-        };
-
-        layer3 {
-            bindings = <&tog 2>;
-            key-positions = <16 17 18>;
+        win {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <32 37>;
+            timeout-ms = <100>;
         };
     };
 
@@ -102,10 +99,10 @@
         Base {
             label = "Base";
             bindings = <
-              &kp Q  &kp W  &kp F         &kp P  &kp B        &kp J      &kp L  &kp U      &kp Z    &kp AT
-              &kp A  &kp R  &kp S         &kp T  &kp G        &kp M      &kp N  &kp E      &kp I    &kp O
-&kp LEFT_GUI  &kp Y  &kp X  &kp C         &kp D  &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &kp SLASH  &kp LS(NUMBER_1)
-                            &kp LEFT_ALT  &mo 3  &kp SPACE    &kp LSHFT  &mo 1  &kp RCTRL
+       &kp Q  &kp W  &kp F         &kp P      &kp B    &kp J  &kp L           &kp U      &kp Z    &kp AT
+       &kp A  &kp R  &kp S         &kp T      &kp G    &kp M  &kp N           &kp E      &kp I    &kp O
+&mo 4  &kp Y  &kp X  &kp C         &kp D      &kp V    &kp K  &kp H           &kp COMMA  &kp DOT  &kp SLASH  &mo 2
+                     &kp LEFT_ALT  &kp SPACE  &mo 3    &mo 1  &kp LEFT_SHIFT  &kp RCTRL
             >;
         };
 
@@ -114,23 +111,23 @@
        &kp LESS_THAN     &kp NUMBER_7  &kp NUMBER_8          &kp N9        &kp RIGHT_BRACKET       &none  &none      &none      &none     &none
        &kp GREATER_THAN  &kp NUMBER_4  &kp NUMBER_5          &kp NUMBER_6  &kp NON_US_BACKSLASH    &none  &kp RSHFT  &kp RCTRL  &kp RALT  &mo 2
 &none  &kp TILDE         &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3  &kp MINUS               &none  &none      &none      &none     &none  &kp QUESTION
-                                       &kp NON_US_BACKSLASH  &kp NUMBER_0  &kp SPACE               &none  &trans     &none
+                                       &kp NON_US_BACKSLASH  &kp NUMBER_0  &kp SPACE               &none  &none      &none
             >;
         };
 
         layer_2 {
             bindings = <
-           &kp F12  &kp F7  &kp F8         &kp F9   &kp RIGHT_BRACKET       &none   &none      &none      &none     &none
-           &kp F11  &kp F4  &kp F5         &kp F6   &kp NON_US_BACKSLASH    &none   &kp RSHFT  &kp RCTRL  &kp RALT  &none
-&kp MINUS  &kp F10  &kp F1  &kp F2         &kp F3   &kp MINUS               &none   &none      &none      &none     &none  &none
-                            &kp SEMICOLON  &kp SQT  &kp LEFT_BRACKET        &tog 0  &none      &none
+                 &kp F12  &kp F7  &kp F8         &kp F9   &none               &none   &none      &none      &none     &none
+                 &kp F11  &kp F4  &kp F5         &kp F6   &none               &none   &kp RSHFT  &kp RCTRL  &kp RALT  &none
+&kp EXCLAMATION  &kp F10  &kp F1  &kp F2         &kp F3   &none               &none   &none      &none      &none     &none  &none
+                                  &kp SEMICOLON  &kp SQT  &kp LEFT_BRACKET    &tog 0  &none      &none
             >;
         };
 
         layer_3 {
             bindings = <
        &none  &none     &none      &none      &none    &kp K_AGAIN  &kp K_PASTE  &kp K_PASTE    &kp K_CUT     &kp K_UNDO
-       &mo 4  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp CLCK     &kp LEFT     &kp DOWN       &kp UP_ARROW  &kp RIGHT
+       &mo 5  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp CLCK     &kp LEFT     &kp DOWN       &kp UP_ARROW  &kp RIGHT
 &none  &none  &none     &none      &none      &none    &kp INS      &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP   &kp END     &none
                         &none      &none      &none    &none        &none        &none
             >;
@@ -138,10 +135,10 @@
 
         layer_4 {
             bindings = <
-        &trans    &trans    &bt BT_CLR  &trans     &trans    &kp K_AGAIN     &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO
-        &kp LALT  &kp LALT  &kp LCTRL   &kp LSHFT  &trans    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&trans  &trans    &trans    &trans      &trans     &trans    &msc SCRL_DOWN  &trans          &trans          &trans        &trans           &trans
-                            &trans      &trans     &tog 0    &mkp MB1        &mkp MB2        &mkp MB3
+       &none     &none     &bt BT_CLR  &none      &none    &kp K_AGAIN     &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO
+       &kp LALT  &kp LALT  &kp LCTRL   &kp LSHFT  &none    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&none  &none     &none     &none       &none      &none    &msc SCRL_DOWN  &none           &none           &none         &none            &kp QUESTION
+                           &none       &none      &none    &mkp MB1        &mkp MB2        &mkp MB3
             >;
         };
 
