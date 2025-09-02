@@ -51,6 +51,20 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+
+        td0: td0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD0";
+            #binding-cells = <0>;
+            bindings = <&mo 1>, <&mo 2>;
+        };
+
+        td1: td1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD1";
+            #binding-cells = <0>;
+            bindings = <&mo 3>, <&mo 4>;
+        };
     };
 
     combos {
@@ -91,6 +105,12 @@
             key-positions = <32 37>;
             timeout-ms = <100>;
         };
+
+        gaming {
+            bindings = <&tog 6>;
+            key-positions = <11 12 13 16 17 18>;
+            timeout-ms = <100>;
+        };
     };
 
     keymap {
@@ -99,10 +119,10 @@
         Base {
             label = "Base";
             bindings = <
-       &kp Q  &kp W  &kp F         &kp P      &kp B    &kp J  &kp L           &kp U      &kp Z    &kp AT
-       &kp A  &kp R  &kp S         &kp T      &kp G    &kp M  &kp N           &kp E      &kp I    &kp O
-&mo 4  &kp Y  &kp X  &kp C         &kp D      &kp V    &kp K  &kp H           &kp COMMA  &kp DOT  &kp SLASH  &mo 2
-                     &kp LEFT_ALT  &kp SPACE  &mo 3    &mo 1  &kp LEFT_SHIFT  &kp RCTRL
+              &kp Q  &kp W  &kp F         &kp P  &kp B        &kp J            &kp L  &kp U      &kp Z    &kp AT
+              &kp A  &kp R  &kp S         &kp T  &kp G        &kp M            &kp N  &kp E      &kp I    &kp O
+&kp LEFT_GUI  &kp Y  &kp X  &kp C         &kp D  &kp V        &kp K            &kp H  &kp COMMA  &kp DOT  &kp SLASH  &tog 6
+                            &kp LEFT_ALT  &td1   &kp SPACE    &kp RIGHT_SHIFT  &td0   &kp RCTRL
             >;
         };
 
@@ -148,6 +168,15 @@
        &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp ASTERISK      &kp SLASH         &none        &kp LS(NON_US_BACKSLASH)  &kp RA(NUMBER_7)  &kp RA(NUMBER_0)  &kp LS(COMMA)   &kp LS(NUMBER_2)
 &none  &kp LS(N7)        &kp LS(NUMBER_1)  &kp LS(NUMBER_5)  &kp LS(NUMBER_0)  &none        &kp RA(Q)                 &kp RA(NUMBER_8)  &kp RA(NUMBER_9)  &kp LS(PERIOD)  &kp HASH          &none
                                            &none             &none             &kp SPACE    &kp ENTER                 &kp BSPC          &none
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+       &kp TAB    &kp Q  &kp W  &kp P     &kp R        &none   &none  &none  &none  &none
+       &kp LSHFT  &kp A  &kp S  &kp D     &kp F        &none   &none  &none  &none  &none
+&kp M  &kp LCTRL  &kp Z  &kp X  &kp C     &kp V        &none   &none  &none  &none  &none  &none
+                         &kp B  &kp LALT  &kp SPACE    &tog 6  &none  &none
             >;
         };
     };
