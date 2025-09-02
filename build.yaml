@@ -2,12 +2,12 @@ include:
   - board: seeeduino_xiao_ble
     shield: totem_left
     artifact-name: totem_left
-    kconfig: config/totem_left.conf
+    kconfig: config/totem.conf
 
   - board: seeeduino_xiao_ble
     shield: totem_right
     artifact-name: totem_right
-    kconfig: config/totem_right.conf
+    kconfig: config/totem.conf
 
   - board: seeeduino_xiao_ble
     shield: settings_reset
