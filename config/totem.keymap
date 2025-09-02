@@ -84,6 +84,16 @@
             bindings = <&mo 5>;
             key-positions = <34 35>;
         };
+
+        layer4 {
+            bindings = <&tog 4>;
+            key-positions = <11 12 13>;
+        };
+
+        layer3 {
+            bindings = <&tog 2>;
+            key-positions = <16 17 18>;
+        };
     };
 
     keymap {
@@ -92,10 +102,10 @@
         Base {
             label = "Base";
             bindings = <
-              &kp Q    &kp W  &kp F         &kp P  &kp B        &kp J      &kp L  &kp U      &kp Z    &kp AT
-              &lt 4 A  &kp R  &kp S         &kp T  &kp G        &kp M      &kp N  &kp E      &kp I    &lt 2 O
-&kp LEFT_GUI  &kp Y    &kp X  &kp C         &kp D  &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &kp SLASH  &kp LS(NUMBER_1)
-                              &kp LEFT_ALT  &mo 3  &kp SPACE    &kp LSHFT  &mo 1  &kp RCTRL
+              &kp Q  &kp W  &kp F         &kp P  &kp B        &kp J      &kp L  &kp U      &kp Z    &kp AT
+              &kp A  &kp R  &kp S         &kp T  &kp G        &kp M      &kp N  &kp E      &kp I    &kp O
+&kp LEFT_GUI  &kp Y  &kp X  &kp C         &kp D  &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &kp SLASH  &kp LS(NUMBER_1)
+                            &kp LEFT_ALT  &mo 3  &kp SPACE    &kp LSHFT  &mo 1  &kp RCTRL
             >;
         };
 
@@ -110,10 +120,10 @@
 
         layer_2 {
             bindings = <
-           &kp F12  &kp F7  &kp F8         &kp F9   &kp RIGHT_BRACKET       &none  &none      &none      &none     &none
-           &kp F11  &kp F4  &kp F5         &kp F6   &kp NON_US_BACKSLASH    &none  &kp RSHFT  &kp RCTRL  &kp RALT  &none
-&kp MINUS  &kp F10  &kp F1  &kp F2         &kp F3   &kp MINUS               &none  &none      &none      &none     &none  &none
-                            &kp SEMICOLON  &kp SQT  &kp LEFT_BRACKET        &none  &none      &none
+           &kp F12  &kp F7  &kp F8         &kp F9   &kp RIGHT_BRACKET       &none   &none      &none      &none     &none
+           &kp F11  &kp F4  &kp F5         &kp F6   &kp NON_US_BACKSLASH    &none   &kp RSHFT  &kp RCTRL  &kp RALT  &none
+&kp MINUS  &kp F10  &kp F1  &kp F2         &kp F3   &kp MINUS               &none   &none      &none      &none     &none  &none
+                            &kp SEMICOLON  &kp SQT  &kp LEFT_BRACKET        &tog 0  &none      &none
             >;
         };
 
@@ -131,13 +141,13 @@
         &trans    &trans    &bt BT_CLR  &trans     &trans    &kp K_AGAIN     &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO
         &kp LALT  &kp LALT  &kp LCTRL   &kp LSHFT  &trans    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
 &trans  &trans    &trans    &trans      &trans     &trans    &msc SCRL_DOWN  &trans          &trans          &trans        &trans           &trans
-                            &trans      &trans     &trans    &mkp MB1        &mkp MB2        &mkp MB3
+                            &trans      &trans     &tog 0    &mkp MB1        &mkp MB2        &mkp MB3
             >;
         };
 
         layer_5 {
             bindings = <
-       &kp LS(NUMBER_6)  &kp BSLH          &kp PLUS          &kp MINUS         &none        &kp BSLH                  &kp LS(NUMBER_8)  &kp NUMBER_9      &none           &none
+       &kp LS(NUMBER_6)  &kp BSLH          &kp PLUS          &kp MINUS         &none        &kp BSLH                  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &none           &none
        &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp ASTERISK      &kp SLASH         &none        &kp LS(NON_US_BACKSLASH)  &kp RA(NUMBER_7)  &kp RA(NUMBER_0)  &kp LS(COMMA)   &kp LS(NUMBER_2)
 &none  &kp LS(N7)        &kp LS(NUMBER_1)  &kp LS(NUMBER_5)  &kp LS(NUMBER_0)  &none        &kp RA(Q)                 &kp RA(NUMBER_8)  &kp RA(NUMBER_9)  &kp LS(PERIOD)  &kp HASH          &none
                                            &none             &none             &kp SPACE    &kp ENTER                 &kp BSPC          &none
