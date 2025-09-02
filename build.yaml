@@ -1,7 +1,14 @@
 include:
   - board: seeeduino_xiao_ble
     shield: totem_left
+    artifact-name: totem_left
+    kconfig: config/board_left.conf
+
   - board: seeeduino_xiao_ble
     shield: totem_right
+    artifact-name: totem_right
+    kconfig: config/board_right.conf
+
   - board: seeeduino_xiao_ble
     shield: settings_reset
+    artifact-name: reset
