@@ -65,6 +65,13 @@
             #binding-cells = <0>;
             bindings = <&mo 3>, <&mo 4>;
         };
+
+        td2: td2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD2";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_SHIFT>, <&mo 7>;
+        };
     };
 
     combos {
@@ -121,7 +128,7 @@
             bindings = <
               &kp Q  &kp W  &kp F         &kp P  &kp B        &kp J            &kp L  &kp U      &kp Z    &kp AT
               &kp A  &kp R  &kp S         &kp T  &kp G        &kp M            &kp N  &kp E      &kp I    &kp O
-&kp LEFT_GUI  &kp Y  &kp X  &kp C         &kp D  &kp V        &kp K            &kp H  &kp COMMA  &kp DOT  &kp SLASH  &tog 6
+&kp LEFT_GUI  &kp Y  &kp X  &kp C         &kp D  &kp V        &kp K            &kp H  &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSPACE
                             &kp LEFT_ALT  &td1   &kp SPACE    &kp RIGHT_SHIFT  &td0   &kp RCTRL
             >;
         };
@@ -177,6 +184,15 @@
        &kp LSHFT  &kp A  &kp S  &kp D     &kp F        &none   &none  &none  &none  &none
 &kp M  &kp LCTRL  &kp Z  &kp X  &kp C     &kp V        &none   &none  &none  &none  &none  &none
                          &kp B  &kp LALT  &kp SPACE    &tog 6  &none  &none
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+        &trans   &trans  &trans     &trans  &trans    &trans  &trans  &kp LBKT  &trans  &trans
+        &kp SQT  &trans  &kp MINUS  &trans  &trans    &trans  &trans  &trans    &trans  &kp SEMI
+&trans  &trans   &trans  &trans     &trans  &trans    &trans  &trans  &trans    &trans  &trans    &trans
+                         &trans     &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
