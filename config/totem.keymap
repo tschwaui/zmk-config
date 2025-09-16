@@ -111,13 +111,7 @@
 
         fuenf {
             bindings = <&mo 5>;
-            key-positions = <34 35>;
-            timeout-ms = <100>;
-        };
-
-        win {
-            bindings = <&kp LEFT_WIN>;
-            key-positions = <32 37>;
+            key-positions = <33 36>;
             timeout-ms = <100>;
         };
 
@@ -125,6 +119,11 @@
             bindings = <&tog 6>;
             key-positions = <11 12 13 16 17 18>;
             timeout-ms = <100>;
+        };
+
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <7 8 35>;
         };
     };
 
@@ -143,46 +142,46 @@
 
         layer_1 {
             bindings = <
-       &kp LESS_THAN     &kp NUMBER_7  &kp NUMBER_8          &kp N9        &kp RIGHT_BRACKET       &none  &none      &kp LEFT_BRACKET  &none     &none
-       &kp GREATER_THAN  &kp NUMBER_4  &kp NUMBER_5          &kp NUMBER_6  &kp NON_US_BACKSLASH    &none  &kp RSHFT  &kp RCTRL         &kp RALT  &kp SEMICOLON
-&none  &kp TILDE         &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3  &kp MINUS               &none  &none      &none             &none     &none          &kp LS(MINUS)
-                                       &kp NON_US_BACKSLASH  &kp NUMBER_0  &kp SPACE               &none  &none      &none
+       &kp LESS_THAN     &kp NUMBER_7  &kp NUMBER_8   &kp N9        &kp RIGHT_BRACKET    &none  &none      &kp LEFT_BRACKET  &none         &none
+       &kp GREATER_THAN  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp LS(NUMBER_7)     &none  &kp RSHFT  &kp RCTRL         &kp LEFT_ALT  &kp SEMICOLON
+&none  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp SLASH            &none  &none      &none             &none         &none          &kp LS(MINUS)
+                                       &kp BACKSLASH  &kp NUMBER_0  &kp SPACE            &none  &none      &none
             >;
         };
 
         layer_2 {
             bindings = <
-       &kp F12  &kp F7  &kp F8         &kp F9   &none               &none   &none      &none      &none     &none
-       &kp F11  &kp F4  &kp F5         &kp F6   &none               &none   &kp RSHFT  &kp RCTRL  &kp RALT  &none
-&none  &kp F10  &kp F1  &kp F2         &kp F3   &none               &none   &none      &none      &none     &none  &none
+       &kp F12  &kp F7  &kp F8         &kp F9   &none               &none   &none      &none      &none         &none
+       &kp F11  &kp F4  &kp F5         &kp F6   &none               &none   &kp RSHFT  &kp RCTRL  &kp LEFT_ALT  &none
+&none  &kp F10  &kp F1  &kp F2         &kp F3   &none               &none   &none      &none      &none         &none  &none
                         &kp SEMICOLON  &kp SQT  &kp LEFT_BRACKET    &tog 0  &none      &none
             >;
         };
 
         layer_3 {
             bindings = <
-                  &none    &none     &none      &none      &none    &kp LC(Y)  &kp LC(V)  &kp LC(K_PASTE)  &kp LC(X)     &kp LC(Z)
-                  &kp SQT  &kp LALT  &kp MINUS  &kp LSHFT  &none    &kp CLCK   &kp LEFT   &kp DOWN         &kp UP_ARROW  &kp RIGHT
-&kp LS(NUMBER_1)  &none    &none     &none      &none      &none    &kp INS    &kp HOME   &kp PAGE_DOWN    &kp PAGE_UP   &kp END    &none
+                  &none    &none     &none      &none      &none    &kp LC(Y)  &kp LC(V)  &kp LC(C)      &kp LC(X)     &kp LC(Z)
+                  &kp SQT  &kp LALT  &kp MINUS  &kp LSHFT  &none    &kp CLCK   &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT
+&kp LS(NUMBER_1)  &none    &none     &none      &none      &none    &kp INS    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &none
                                      &none      &none      &none    &none      &none      &none
             >;
         };
 
         layer_4 {
             bindings = <
-       &none  &none     &bt BT_CLR  &none      &none    &kp LC(Y)       &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)
-       &none  &kp LALT  &kp LCTRL   &kp LSHFT  &none    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&none  &none  &none     &none       &none      &none    &msc SCRL_DOWN  &none           &none           &none         &none            &kp QUESTION
-                        &none       &none      &none    &mkp MB1        &mkp MB2        &mkp MB3
+       &none                 &none       &bt BT_CLR        &none       &kp C_MUTE         &kp LC(Y)       &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)
+       &kp C_BRIGHTNESS_INC  &kp LALT    &kp LCTRL         &kp LSHFT   &kp C_VOLUME_UP    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&none  &kp C_BRIGHTNESS_DEC  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOL_DN       &msc SCRL_DOWN  &none           &none           &none         &none            &kp QUESTION
+                                         &none             &none       &none              &mkp MB1        &mkp MB2        &mkp MB3
             >;
         };
 
         layer_5 {
             bindings = <
-       &kp LS(NUMBER_6)  &kp BSLH          &kp PLUS          &kp MINUS         &none        &kp BSLH                  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &none           &none
-       &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp ASTERISK      &kp SLASH         &none        &kp LS(NON_US_BACKSLASH)  &kp RA(NUMBER_7)  &kp RA(NUMBER_0)  &kp LS(COMMA)   &kp LS(NUMBER_2)
-&none  &kp LS(N7)        &kp LS(NUMBER_1)  &kp LS(NUMBER_5)  &kp LS(NUMBER_0)  &none        &kp RA(Q)                 &kp RA(NUMBER_8)  &kp RA(NUMBER_9)  &kp LS(PERIOD)  &kp HASH          &kp BACKSPACE
-                                           &none             &none             &kp SPACE    &kp ENTER                 &none             &none
+       &kp LS(NUMBER_6)  &kp BSLH          &kp RIGHT_BRACKET      &kp SLASH         &none        &kp GRAVE      &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &none           &kp LS(BACKSLASH)
+       &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(RIGHT_BRACKET)  &kp LS(NUMBER_7)  &none        &kp LS(GRAVE)  &kp RA(NUMBER_7)  &kp RA(NUMBER_0)  &kp LS(COMMA)   &kp LS(NUMBER_2)
+&none  &kp LS(N7)        &kp LS(NUMBER_1)  &kp LS(NUMBER_5)       &kp LS(NUMBER_0)  &none        &kp RA(Q)      &kp RA(NUMBER_8)  &kp RA(NUMBER_9)  &kp LS(PERIOD)  &kp HASH           &kp BACKSPACE
+                                           &none                  &none             &kp SPACE    &kp ENTER      &none             &none
             >;
         };
 
