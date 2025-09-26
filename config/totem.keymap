@@ -124,12 +124,6 @@
             timeout-ms = <100>;
         };
 
-        gaming {
-            bindings = <&tog 6>;
-            key-positions = <11 12 13 16 17 18>;
-            timeout-ms = <100>;
-        };
-
         del {
             bindings = <&kp DELETE>;
             key-positions = <7 8 6>;
@@ -196,15 +190,6 @@
        &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(RIGHT_BRACKET)  &kp LS(NUMBER_7)  &none        &kp LS(GRAVE)  &kp RA(NUMBER_7)  &kp RA(NUMBER_0)  &kp LS(COMMA)   &kp LS(NUMBER_2)
 &none  &kp LS(N7)        &kp LS(NUMBER_1)  &kp LS(NUMBER_5)       &kp LS(NUMBER_0)  &none        &kp RA(Q)      &kp RA(NUMBER_8)  &kp RA(NUMBER_9)  &kp LS(PERIOD)  &kp HASH           &kp BACKSPACE
                                            &none                  &none             &kp SPACE    &kp ENTER      &none             &none
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-       &kp TAB    &kp Q  &kp W  &kp P     &kp R        &none   &none  &none  &none  &none
-       &kp LSHFT  &kp A  &kp S  &kp D     &kp F        &none   &none  &none  &none  &none
-&kp M  &kp LCTRL  &kp Z  &kp X  &kp C     &kp V        &none   &none  &none  &none  &none  &none
-                         &kp B  &kp LALT  &kp SPACE    &tog 6  &none  &none
             >;
         };
     };
