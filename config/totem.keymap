@@ -117,20 +117,9 @@
             timeout-ms = <100>;
         };
 
-        fuenf {
-            bindings = <&mo 0>;
-            key-positions = <33 36>;
-            timeout-ms = <100>;
-        };
-
         del {
             bindings = <&kp DELETE>;
             key-positions = <7 8 6>;
-        };
-
-        tri {
-            bindings = <&mo 0>;
-            key-positions = <36 19>;
         };
     };
 
@@ -140,8 +129,8 @@
         Base {
             label = "Base";
             bindings = <
-              &kp Q             &kp W  &kp F         &kp P  &kp B        &kp J            &kp L  &mt LEFT_BRACE U  &kp Z    &mt RA(MINUS) MINUS
-              &mt APOSTROPHE A  &kp R  &kp S         &kp T  &kp G        &kp M            &kp N  &kp E             &kp I    &mt SEMICOLON SEMICOLON
+              &mt RA(Q) Q       &kp W  &kp F         &kp P  &kp B        &kp J            &kp L  &mt LEFT_BRACE U  &kp Z    &mt RA(MINUS) MINUS
+              &mt APOSTROPHE A  &kp R  &kp S         &kp T  &kp G        &mt RA(M) M      &kp N  &mt RA(E) E       &kp I    &mt SEMICOLON SEMICOLON
 &kp LEFT_GUI  &kp Y             &kp X  &kp C         &kp D  &kp V        &kp K            &kp H  &kp COMMA         &kp DOT  &kp SLASH                &mt LS(NUMBER_1) MINUS
                                        &kp LEFT_ALT  &mo 2  &kp SPACE    &kp RIGHT_SHIFT  &mo 1  &kp RCTRL
             >;
