@@ -129,10 +129,10 @@
         Base {
             label = "Base";
             bindings = <
-              &mt RA(Q) Q       &kp W  &kp F         &kp P  &kp B        &kp J            &kp L  &mt LEFT_BRACE U  &kp Z    &mt RA(MINUS) MINUS
-              &mt APOSTROPHE A  &kp R  &kp S         &kp T  &kp G        &mt RA(M) M      &kp N  &mt RA(E) E       &kp I    &mt SEMICOLON SEMICOLON
-&kp LEFT_GUI  &kp Y             &kp X  &kp C         &kp D  &kp V        &kp K            &kp H  &kp COMMA         &kp DOT  &kp SLASH                &mt LS(NUMBER_1) MINUS
-                                       &kp LEFT_ALT  &mo 2  &kp SPACE    &kp RIGHT_SHIFT  &mo 1  &kp RCTRL
+              &kp Q  &kp W  &kp F         &kp P  &kp B        &kp J            &kp L  &kp U      &kp Z    &mt RA(MINUS) MINUS
+              &kp A  &kp R  &kp S         &kp T  &kp G        &kp M            &kp N  &kp E      &kp I    &kp O
+&kp LEFT_GUI  &kp Y  &kp X  &kp C         &kp D  &kp V        &kp K            &kp H  &kp COMMA  &kp DOT  &kp SLASH            &sl 3
+                            &kp LEFT_ALT  &mo 2  &kp SPACE    &kp RIGHT_SHIFT  &mo 1  &kp RCTRL
             >;
         };
 
@@ -147,10 +147,19 @@
 
         zahlen {
             bindings = <
-              &kp LS(N1)       &kp LS(N2)       &kp LS(N3)       &kp LS(N4)       &kp LS(N5)         &kp LS(N6)       &kp LS(N7)       &kp LS(N8)       &kp LS(N9)       &kp LS(N0)
-              &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &mt F4 NUMBER_4  &mt F5 NUMBER_5    &mt F6 NUMBER_6  &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &mt F10 NUMBER_0
-&mt F12 HASH  &kp RA(N1)       &kp RA(N2)       &kp RA(N3)       &kp RA(N4)       &kp RA(N5)         &kp RA(N6)       &kp RA(N7)       &kp RA(N8)       &kp RA(N9)       &kp RA(N0)        &mt F11 RIGHT_BRACKET
-                                                &kp LEFT_ALT     &kp LEFT_WIN     &kp LCTRL          &none            &none            &none
+                      &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &kp LS(N6)    &kp LS(N7)    &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
+                      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5        &kp N6        &kp N7        &kp N8      &kp N9      &kp N0
+&kp NON_US_BACKSLASH  &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &kp RA(N6)    &kp RA(N7)    &kp RA(N8)  &kp RA(N9)  &kp RA(N0)  &mt LS(RIGHT_BRACKET) RIGHT_BRACKET
+                                              &none       &none       &none         &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+         &kp RA(Q)  &none   &none   &none   &none     &none      &none   &kp LBKT  &none   &none
+         &kp APOS   &none   &none   &none   &none     &kp RA(M)  &none   &none     &none   &kp SEMI
+&kp F11  &kp F1     &kp F2  &kp F3  &kp F4  &kp F5    &kp F6     &kp F7  &kp F8    &kp F9  &kp F10   &kp F12
+                            &none   &none   &none     &none      &none   &none
             >;
         };
     };
