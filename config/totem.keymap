@@ -138,10 +138,10 @@
 
         pfeile {
             bindings = <
-           &kp GRAVE      &kp PRINTSCREEN      &kp SCROLLLOCK  &kp PAUSE_BREAK         &kp C_MUTE           &kp LC(Y)  &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)
-           &kp LEFT_WIN   &mt LEFT_ALT INSERT  &mt LCTRL HOME  &mt LEFT_SHIFT PAGE_UP  &kp C_VOLUME_UP      &none      &kp LEFT        &kp DOWN        &kp UP_ARROW  &kp RIGHT
-&kp POUND  &kp BACKSLASH  &kp DEL              &kp END         &kp PAGE_DOWN           &kp C_VOLUME_DOWN    &mkp MB1   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp MB2
-                                               &mkp MB3        &mkp MB2                &mkp MB1             &none      &none           &none
+                 &kp GRAVE      &kp PRINTSCREEN      &kp SCROLLLOCK  &kp PAUSE_BREAK         &kp C_MUTE           &kp LC(Y)  &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)
+                 &kp LEFT_WIN   &mt LEFT_ALT INSERT  &mt LCTRL HOME  &mt LEFT_SHIFT PAGE_UP  &kp C_VOLUME_UP      &none      &kp LEFT        &kp DOWN        &kp UP_ARROW  &kp RIGHT
+&kp NON_US_HASH  &kp BACKSLASH  &kp DEL              &kp END         &kp PAGE_DOWN           &kp C_VOLUME_DOWN    &mkp MB1   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp MB2
+                                                     &mkp MB3        &mkp MB2                &mkp MB1             &none      &none           &none
             >;
         };
 
