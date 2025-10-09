@@ -51,18 +51,18 @@
             bindings = <&kp>, <&kp>;
         };
 
-        td0: td0 {
+        td_alt: td_alt {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD0";
+            label = "TD_ALT";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 0>;
+            bindings = <&kp LEFT_ALT>, <&kp RIGHT_ALT>;
         };
 
-        td1: td1 {
+        td_shift_ctrl: td_shift_ctrl {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD1";
+            label = "TD_SHIFT_CTRL";
             #binding-cells = <0>;
-            bindings = <&mo 0>, <&mo 0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp LCTRL>;
         };
 
         td2: td2 {
@@ -129,10 +129,10 @@
         Base {
             label = "Base";
             bindings = <
-              &kp Q  &kp W  &kp F         &kp P  &kp B        &kp J            &kp L  &kp U      &kp Z    &mt RA(MINUS) MINUS
-              &kp A  &kp R  &kp S         &kp T  &kp G        &kp M            &kp N  &kp E      &kp I    &kp O
-&kp LEFT_GUI  &kp Y  &kp X  &kp C         &kp D  &kp V        &kp K            &kp H  &kp COMMA  &kp DOT  &kp SLASH            &sl 3
-                            &kp LEFT_ALT  &mo 2  &kp SPACE    &kp RIGHT_SHIFT  &mo 1  &kp RCTRL
+              &kp Q  &kp W  &kp F    &kp P  &kp B        &kp J            &kp L  &kp U      &kp Z    &kp MINUS
+              &kp A  &kp R  &kp S    &kp T  &kp G        &kp M            &kp N  &kp E      &kp I    &kp O
+&kp LEFT_GUI  &kp Y  &kp X  &kp C    &kp D  &kp V        &kp K            &kp H  &kp COMMA  &kp DOT  &kp SLASH  &sl 3
+                            &td_alt  &mo 2  &kp SPACE    &kp RIGHT_SHIFT  &mo 1  &kp RCTRL
             >;
         };
 
@@ -147,10 +147,10 @@
 
         zahlen {
             bindings = <
-                      &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &kp LS(N6)    &kp LS(N7)    &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
-                      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5        &kp N6        &kp N7        &kp N8      &kp N9      &kp N0
-&kp NON_US_BACKSLASH  &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &kp RA(N6)    &kp RA(N7)    &kp RA(N8)  &kp RA(N9)  &kp RA(N0)  &mt LS(RIGHT_BRACKET) RIGHT_BRACKET
-                                              &none       &none       &none         &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL
+                      &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &kp LS(N6)      &kp LS(N7)    &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
+                      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5        &kp N6          &kp N7        &kp N8      &kp N9      &kp N0
+&kp NON_US_BACKSLASH  &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &kp RA(N6)      &kp RA(N7)    &kp RA(N8)  &kp RA(N9)  &kp RA(N0)  &kp RIGHT_BRACKET
+                                              &none       &none       &none         &td_shift_ctrl  &kp LEFT_WIN  &td_alt
             >;
         };
 
