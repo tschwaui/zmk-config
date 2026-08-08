@@ -122,6 +122,11 @@
             key-positions = <6 7 8>;
             timeout-ms = <100>;
         };
+
+        tequila {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <22 23 24>;
+        };
     };
 
     keymap {
@@ -130,10 +135,10 @@
         Base {
             label = "Base";
             bindings = <
-              &kp Q  &kp W  &kp E    &kp R  &kp T        &kp Y        &kp U  &kp I            &kp O    &kp P
-              &kp A  &kp S  &kp D    &kp F  &kp G        &kp H        &kp J  &kp K            &kp L    &kp SEMI
-&sk LEFT_GUI  &kp Z  &kp X  &kp C    &kp V  &kp B        &kp N        &kp M  &kp COMMA        &kp DOT  &kp FSLH  &kp ENTER
-                            &td_alt  &mo 2  &kp LCTRL    &lt 3 SPACE  &mo 1  &kp RIGHT_SHIFT
+              &kp Q  &kp W  &kp E    &kp R  &kp T          &kp Y            &kp U  &kp I      &kp O    &kp P
+              &kp A  &kp S  &kp D    &kp F  &kp G          &kp H            &kp J  &kp K      &kp L    &kp SEMI
+&sk LEFT_GUI  &kp Z  &kp X  &kp C    &kp V  &kp B          &kp N            &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
+                            &td_alt  &mo 2  &lt 3 SPACE    &kp RIGHT_SHIFT  &mo 1  &kp RCTRL
             >;
         };
 
